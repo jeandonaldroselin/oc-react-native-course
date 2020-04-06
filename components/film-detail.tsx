@@ -10,13 +10,14 @@ import {
     Image,
     TouchableOpacity,
     Share,
-    Platform, Button
+    Platform
 } from 'react-native';
 import {getFilmDetailFromApi, getImageFromApi} from "../api/tmdb-api";
 import Film from "../helpers/film-model";
 import moment from "moment";
 import numeral from "numeral";
 import { connect } from 'react-redux';
+import EnlargeShrink from '../animations/enlarge-shrink';
 
 class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[], dispatch: Function }, {film: Film, isLoading: boolean}> {
 
@@ -52,14 +53,14 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
                     film: film,
                     isLoading: false
                 }, () => {
-                    this.props.navigation.setParams({ shareFilm : () => this._shareFilm(), film : this.state.film } )
+                    this.props.navigation.setParams({ shareFilm : () => this._shareFilm(), film : this.state.film } );
                 });
             });
     }
 
     componentDidUpdate() {
-        console.log("componentDidUpdate : ")
-        console.log(this.props.favoritesFilm)
+        console.log("componentDidUpdate : ");
+        console.log(this.props.favoritesFilm);
     }
 
     _displayLoading() {
@@ -74,16 +75,15 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
     }
 
     _displayFavoriteImage() {
-        let sourceImage = require('../images/ic_favorite_border.png')
-        if (this.props.favoritesFilm.findIndex(item => item.id === this.state.film.id) !== -1) {
-            // Film dans nos favoris
-            sourceImage = require('../images/ic_favorite.png')
-        }
+        const isFavourite = (this.props.favoritesFilm.findIndex(item => item.id === this.state.film.id) !== -1);
+        const sourceImage = isFavourite ? require('../images/ic_favorite.png') : require('../images/ic_favorite_border.png');
         return (
-            <Image
-                style={styles.favorite_image}
-                source={sourceImage}
-            />
+            <EnlargeShrink shouldEnlarge={isFavourite}>
+                <Image
+                    style={styles.favorite_image}
+                    source={sourceImage}
+                />
+            </EnlargeShrink>
         )
     }
 
@@ -203,8 +203,9 @@ const styles = StyleSheet.create({
         alignItems: 'center', // Alignement des components enfants sur l'axe secondaire, X ici
     },
     favorite_image: {
-        width: 40,
-        height: 40
+        flex: 1,
+        width: '100%',
+        height: '100%'
     },
     share_touchable_floatingactionbutton: {
         position: 'absolute',
