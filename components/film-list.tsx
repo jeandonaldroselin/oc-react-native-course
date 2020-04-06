@@ -3,7 +3,11 @@ import {FlatList, StyleSheet, View} from "react-native";
 import Film from "../helpers/film-model";
 import FilmItem from "./filter-item";
 
-class FilmList extends React.Component<{ films: Film[], favoritesFilm: Film[], onEndReached: Function, displayDetailForFilm: Function }> {
+class FilmList extends React.Component<{ navigation: any, films: Film[], favoritesFilm: Film[], onEndReached: Function }> {
+
+    _displayDetailForFilm = (filmId: number) => {
+        this.props.navigation && this.props.navigation.navigate('FilmDetail', { filmId: filmId });
+    };
 
     _isFilmFavorite(film: Film) {
         return this.props.favoritesFilm.findIndex(item => item.id === film.id) !== -1;
@@ -17,7 +21,7 @@ class FilmList extends React.Component<{ films: Film[], favoritesFilm: Film[], o
                 data={this.props.films}
                 extraData={this.props.favoritesFilm}
                 keyExtractor={(item) => item.id.toString()}
-                renderItem={({item}) => <FilmItem film={item} displayDetailForFilm={this.props.displayDetailForFilm} isFilmFavorite={this._isFilmFavorite(item)}/>}
+                renderItem={({item}) => <FilmItem film={item} displayDetailForFilm={this._displayDetailForFilm} isFilmFavorite={this._isFilmFavorite(item)}/>}
                 onEndReachedThreshold={0.5}
                 onEndReached={() => {
                     this.props.onEndReached()

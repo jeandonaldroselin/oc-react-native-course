@@ -60,10 +60,6 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
         }
     }
 
-    _displayDetailForFilm = (filmId: number) => {
-        this.props.navigation && this.props.navigation.navigate('FilmDetail', { filmId: filmId });
-    };
-
     render() {
         return (
             <View style={styles.main_container}>
@@ -73,13 +69,13 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
                            onChangeText={(text) => this._searchTextInputChanged(text) }/>
                 <Button title={'Rechercher'} onPress={() => this._searchFilms()}>rechercher</Button>
                 <FilmList films={this.state.films}
+                          navigation={this.props.navigation}
                           favoritesFilm={this.props.favoritesFilm}
                           onEndReached={() => {
                               if (this.page < this.totalPages) {
                                   this._loadFilms()
                               }
-                          }}
-                          displayDetailForFilm={this._displayDetailForFilm} />
+                          }}/>
                {this._displayLoading()}
             </View>
         );

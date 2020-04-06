@@ -7,7 +7,7 @@ import {createAppContainer} from "react-navigation";
 import FilmDetail from "../components/film-detail";
 import Favorites from "../components/favorites";
 import {createBottomTabNavigator} from "react-navigation-tabs";
-import { StyleSheet, Image } from 'react-native';
+import {StyleSheet, Image} from 'react-native';
 
 const SearchStackNavigator = createStackNavigator({
     Search: {
@@ -28,7 +28,7 @@ const FavoritesStackNavigator = createStackNavigator({
     Favorites: {
         screen: Favorites,
     },
-    FavouriteDetail: {
+    FilmDetail: {
         screen: FilmDetail,
         navigationOptions: {
             title: 'Détail'
