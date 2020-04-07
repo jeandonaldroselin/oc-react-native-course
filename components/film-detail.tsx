@@ -58,11 +58,6 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
             });
     }
 
-    componentDidUpdate() {
-        console.log("componentDidUpdate : ");
-        console.log(this.props.favoritesFilm);
-    }
-
     _displayLoading() {
         if (this.state.isLoading) {
             // Si isLoading vaut true, on affiche le chargement à l'écran
@@ -152,7 +147,6 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
     }
 
     render() {
-        console.log('film Detail Props', this.props);
         return (
             <View style={styles.main_container}>
                 {this._displayLoading()}

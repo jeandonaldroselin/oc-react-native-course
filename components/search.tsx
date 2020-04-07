@@ -4,7 +4,6 @@ import Film from "../helpers/film-model";
 import {getFilmsFromApiWithSearchedText} from "../api/tmdb-api";
 import {connect} from "react-redux";
 import FilmList from "./film-list";
-import toggleFavorite from "../store/reducers/favorite-reducer";
 
 class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] }, { films: Film[], isLoading: boolean }> {
 
@@ -28,9 +27,18 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
             this.setState({ isLoading: true })
             getFilmsFromApiWithSearchedText(this.searchedText, this.page+1).then(data => {
                 this.page = data.page;
-                this.totalPages = data.total_pages
+                this.totalPages = data.total_pages;
+                const mergedFilms: Film[] = [];
+                this.state.films.concat(data.results).filter(function(item){
+                    const i = mergedFilms.findIndex(x => x.id == item.id);
+                    if(i <= -1){
+                        mergedFilms.push(item);
+                    }
+                    return null;
+                });
+                console.log("mergedFilms : ", mergedFilms);
                 this.setState({
-                    films: [ ...this.state.films, ...data.results ],
+                    films: mergedFilms,
                     isLoading: false
                 })
             })

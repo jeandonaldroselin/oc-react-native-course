@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79f0f9e-6b70-4d56-b50f-c4459c9b4262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/reducers/avatar-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/favorites.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tmdb-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/tmdb-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/film-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/film-detail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/MoviesAndMe/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/MoviesAndMe/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/configure-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/configure-store.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,12 +31,12 @@
         <counts>
           <entry key="gitignore" value="3" />
           <entry key="js" value="7" />
-          <entry key="json" value="13" />
+          <entry key="json" value="15" />
           <entry key="keystore" value="1" />
           <entry key="md" value="3" />
           <entry key="plist" value="1" />
           <entry key="png" value="4" />
-          <entry key="ts" value="26" />
+          <entry key="ts" value="27" />
           <entry key="tsx" value="29" />
           <entry key="xml" value="1" />
         </counts>
@@ -54,11 +44,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="4" />
-          <entry key="JSON" value="12" />
+          <entry key="JSON" value="14" />
           <entry key="JavaScript" value="7" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="TypeScript" value="26" />
+          <entry key="TypeScript" value="27" />
           <entry key="TypeScript JSX" value="29" />
           <entry key="XML" value="1" />
           <entry key="tsconfig" value="1" />
@@ -76,7 +66,7 @@
           <entry key="json" value="20" />
           <entry key="md" value="1702" />
           <entry key="ts" value="1090" />
-          <entry key="tsx" value="7222" />
+          <entry key="tsx" value="7403" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,18 +76,18 @@
           <entry key="Markdown" value="1702" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="TypeScript" value="1090" />
-          <entry key="TypeScript JSX" value="7222" />
+          <entry key="TypeScript JSX" value="7403" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/avatar.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="345">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#25#50#0" expanded="true" />
               </folding>
@@ -105,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/search.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="107" column="3" lean-forward="true" selection-start-line="107" selection-start-column="3" selection-end-line="115" selection-end-column="48" />
+            <state relative-caret-position="220">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -118,43 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/reducers/avatar-reducer.ts">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/configure-store.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="69" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="69" />
-              <folding>
-                <element signature="e#29#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/reducers/favorite-reducer.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/favorites.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="50" selection-end-column="51" />
-              <folding>
-                <element signature="e#29#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="92">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -170,9 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
-      <find>displayDetailForFilm</find>
-      <find>navigation.</find>
       <find>FilmDetail</find>
       <find>isFilmFavorite</find>
       <find>static</find>
@@ -200,6 +154,9 @@
       <find>this.props.dispatch</find>
       <find>_avatarClicked</find>
       <find>state.setAvatar.avatar</find>
+      <find>console.log(</find>
+      <find>state</find>
+      <find>toggleFavorite</find>
     </findStrings>
     <replaceStrings>
       <replace>isLoading</replace>
@@ -240,10 +197,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ios/MoviesAndMe/Info.plist" />
         <option value="$PROJECT_DIR$/store/configure-store.ts" />
-        <option value="$PROJECT_DIR$/components/search.tsx" />
         <option value="$PROJECT_DIR$/components/favorites.tsx" />
         <option value="$PROJECT_DIR$/store/reducers/avatar-reducer.ts" />
         <option value="$PROJECT_DIR$/components/avatar.tsx" />
+        <option value="$PROJECT_DIR$/components/search.tsx" />
       </list>
     </option>
   </component>
@@ -264,8 +221,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="23" />
+    <option name="x" value="424" />
+    <option name="y" value="161" />
     <option name="width" value="947" />
     <option name="height" value="833" />
   </component>
@@ -281,17 +238,6 @@
             <path>
               <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -345,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1585960432760</updated>
       <workItem from="1585960435906" duration="65411000" />
-      <workItem from="1586264081305" duration="13372000" />
+      <workItem from="1586264081305" duration="18098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78783000" />
+    <option name="totallyTimeSpent" value="83509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="23" width="947" height="833" extended-state="0" />
@@ -361,7 +307,7 @@
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.39956802" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.19433199" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.36707154" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -434,6 +380,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#25#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/MoviesAndMe/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -677,27 +619,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/store/reducers/avatar-reducer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/search.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="107" column="3" lean-forward="true" selection-start-line="107" selection-start-column="3" selection-end-line="115" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/avatar.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#25#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/arr-union/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/search.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
