@@ -1,19 +1,17 @@
 import React from 'react';
-import {ActivityIndicator, Button, StyleSheet, TextInput, View} from "react-native";
+import {ActivityIndicator, StyleSheet, View} from "react-native";
 import Film from "../helpers/film-model";
-import {getFilmsFromApiWithSearchedText} from "../api/tmdb-api";
+import {getBestFilmsFromApi} from "../api/tmdb-api";
 import {connect} from "react-redux";
 import FilmList from "./film-list";
 
-class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] }, { films: Film[], isLoading: boolean }> {
+class News extends React.Component<{ navigation: any, favoritesFilm: Film[] }, { films: Film[], isLoading: boolean }> {
 
-    private searchedText: string = '';
     private page: number = 1;
     private totalPages: any = null;
 
     constructor(props: any) {
         super(props);
-        this.searchedText = '';
         this.page = 0;
         this.totalPages = 0;
         this.state = {
@@ -22,10 +20,13 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
         }
     }
 
+    componentDidMount() {
+        this._loadFilms()
+    }
+
     _loadFilms() {
-        if (this.searchedText.length > 0) {
             this.setState({ isLoading: true })
-            getFilmsFromApiWithSearchedText(this.searchedText, this.page+1).then(data => {
+            getBestFilmsFromApi(this.page + 1).then(data => {
                 this.page = data.page;
                 this.totalPages = data.total_pages;
                 const mergedFilms: Film[] = [];
@@ -42,21 +43,6 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
                     isLoading: false
                 })
             })
-        }
-    }
-
-    _searchTextInputChanged(text: string) {
-        this.searchedText = text
-    }
-
-    _searchFilms() {
-        this.page = 0;
-        this.totalPages = 0;
-        this.setState({
-            films: [],
-        }, () => {
-            this._loadFilms()
-        })
     }
 
     _displayLoading() {
@@ -72,11 +58,6 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
     render() {
         return (
             <View style={styles.main_container}>
-                <TextInput style={[styles.textinput]}
-                           placeholder={'Title of the film'}
-                           onSubmitEditing={() => this._searchFilms()}
-                           onChangeText={(text) => this._searchTextInputChanged(text) }/>
-                <Button title={'Search'} onPress={() => this._searchFilms()}>Search</Button>
                 <FilmList films={this.state.films}
                           navigation={this.props.navigation}
                           favoritesFilm={this.props.favoritesFilm}
@@ -93,16 +74,7 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
 
 const styles = StyleSheet.create({
     main_container: {
-        flex: 1,
-        marginTop: 20
-    },
-    textinput: {
-        marginLeft: 5,
-        marginRight: 5,
-        height: 50,
-        borderColor: '#000000',
-        borderWidth: 1,
-        paddingLeft: 5
+        flex: 1
     },
     loading_container: {
         position: 'absolute',
@@ -121,4 +93,4 @@ const mapStateToProps = (state: any) => {
     }
 };
 
-export default connect(mapStateToProps)(Search);
+export default connect(mapStateToProps)(News);

@@ -3,6 +3,7 @@
 import React from 'react' // N'oubliez pas l'import de React ici. On en a besoin pour rendre nos components React Native Image !
 import { createStackNavigator } from 'react-navigation-stack';
 import Search from "../components/search";
+import News from "../components/news";
 import {createAppContainer} from "react-navigation";
 import FilmDetail from "../components/film-detail";
 import Favorites from "../components/favorites";
@@ -13,13 +14,13 @@ const SearchStackNavigator = createStackNavigator({
     Search: {
         screen: Search,
         navigationOptions: {
-            title: 'Rechercher'
+            title: 'Search'
         }
     },
     FilmDetail: {
         screen: FilmDetail,
         navigationOptions: {
-            title: 'Détail'
+            title: 'Detail'
         }
     }
 });
@@ -31,7 +32,22 @@ const FavoritesStackNavigator = createStackNavigator({
     FilmDetail: {
         screen: FilmDetail,
         navigationOptions: {
-            title: 'Détail'
+            title: 'Detail'
+        }
+    }
+});
+
+const NewsStackNavigator = createStackNavigator({
+    News: {
+        screen: News,
+        navigationOptions: {
+            title: 'Latest Films'
+        },
+    },
+    FilmDetail: {
+        screen: FilmDetail,
+        navigationOptions: {
+            title: 'Detail'
         }
     }
 });
@@ -50,6 +66,14 @@ const MoviesTabNavigator = createBottomTabNavigator({
             navigationOptions: {
                 tabBarIcon: () => {
                     return <Image source={require('../images/ic_favorite.png')} style={styles.icon}/>
+                }
+            }
+        },
+        News: {
+            screen: NewsStackNavigator,
+            navigationOptions: {
+                tabBarIcon: () => {
+                    return <Image source={require('../images/ic_fiber_new.png')} style={styles.icon}/>
                 }
             }
         }
