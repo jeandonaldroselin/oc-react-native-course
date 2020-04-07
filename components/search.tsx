@@ -4,6 +4,7 @@ import Film from "../helpers/film-model";
 import {getFilmsFromApiWithSearchedText} from "../api/tmdb-api";
 import {connect} from "react-redux";
 import FilmList from "./film-list";
+import toggleFavorite from "../store/reducers/favorite-reducer";
 
 class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] }, { films: Film[], isLoading: boolean }> {
 
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state: any) => {
     return {
-        favoritesFilm: state.favoritesFilm
+        favoritesFilm: state.toggleFavorite.favoritesFilm
     }
 };
 

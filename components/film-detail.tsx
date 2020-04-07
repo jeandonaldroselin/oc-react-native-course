@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state: any) => {
     return {
-        favoritesFilm: state.favoritesFilm
+        favoritesFilm: state.toggleFavorite.favoritesFilm
     }
 };
 
