@@ -12,3 +12,17 @@ web-report/
 
 # macOS
 .DS_Store
+
+# intellij
+.idea
+local.properties
+
+# Android/IntelliJ
+#
+build/
+.gradle
+*.iml
+*.apk
+
+# CocoaPods
+/ios/Pods/
