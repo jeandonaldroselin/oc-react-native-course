@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79f0f9e-6b70-4d56-b50f-c4459c9b4262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/animations/enlarge-shrink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animations/fade-in.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/film-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/film-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/filter-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/filter-item.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +27,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="2" />
+          <entry key="md" value="1" />
           <entry key="png" value="4" />
           <entry key="ts" value="14" />
           <entry key="tsx" value="20" />
@@ -40,6 +38,7 @@
           <entry key="Image" value="4" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="14" />
           <entry key="TypeScript JSX" value="20" />
@@ -52,12 +51,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="md" value="1498" />
           <entry key="ts" value="1019" />
           <entry key="tsx" value="6993" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="1498" />
           <entry key="TypeScript" value="1019" />
           <entry key="TypeScript JSX" value="6993" />
         </counts>
@@ -90,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navigation/navigation.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="401">
@@ -98,6 +99,18 @@
               <folding>
                 <element signature="e#158#220#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="331">
+                <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -200,6 +213,7 @@
         <option value="$PROJECT_DIR$/animations/zoom-in.tsx" />
         <option value="$PROJECT_DIR$/components/film-detail.tsx" />
         <option value="$PROJECT_DIR$/navigation/navigation.tsx" />
+        <option value="$PROJECT_DIR$/.README.md" />
       </list>
     </option>
   </component>
@@ -222,7 +236,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="39" />
-    <option name="width" value="1031" />
+    <option name="width" value="1387" />
     <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -237,26 +251,6 @@
             <path>
               <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="animations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MoviesAndMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAndMe" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,22 +301,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585960432760</updated>
-      <workItem from="1585960435906" duration="61986000" />
+      <workItem from="1585960435906" duration="63789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61986000" />
+    <option name="totallyTimeSpent" value="63789000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="39" width="1031" height="817" extended-state="0" />
+    <frame x="4" y="39" width="1387" height="817" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24950495" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18448023" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3089655" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3089655" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -573,6 +568,16 @@
           <folding>
             <element signature="e#158#220#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="331">
+            <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
