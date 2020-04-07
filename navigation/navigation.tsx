@@ -1,4 +1,4 @@
-// navigation/navigation.ts
+// navigation/navigation.tsx
 
 import React from 'react' // N'oubliez pas l'import de React ici. On en a besoin pour rendre nos components React Native Image !
 import { createStackNavigator } from 'react-navigation-stack';
