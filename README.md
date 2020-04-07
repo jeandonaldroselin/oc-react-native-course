@@ -20,15 +20,15 @@ Available features are :
 Installation
 -------------
 
-As this mobile application is a CRNA, you will need to follow theses steps :
+As this mobile application is a React Native app with native code, you will need to follow theses steps :
 
 
 * Install Epo cli globally
 
-```npm i -g expo-cli```
+```npm install -g react-native-cli```
 
 
-* Install the project dependencies
+* Install the project JS dependencies
 
 ```
 $ cd oc-react-native-course/
@@ -36,15 +36,24 @@ $ npm i
 $ npm start
 ```
 
-You will see a new page opened with a QR code in your browser at this place [http://localhost:19002](http://localhost:19002)
 
+* Install the project IOS dependencies and run IOs
 
-* Install the Expo Client App on your devices :
+```
+$ cd oc-react-native-course/ios/
+$ pod install --repo-update
+$ cd ../
+$ npm run ios
+```
 
-For Iphone [Download on App Store](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8)
+* Install the project Android dependencies and run Android
 
-For Android [Download on Google PLay](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=fr)
-
+```
+$ cd oc-react-native-course/android/
+$ xyz_command
+$ cd ../
+$ npm run android
+```
 
 * Finally
 
