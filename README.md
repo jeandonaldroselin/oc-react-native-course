@@ -4,7 +4,7 @@ Movies And Me
 
 This project is created while following a [React Native course on Open Classrooms](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native).
 
-This mobile application allow you to search films from [The Movie Database ( themoviedb.org )](themoviedb.org).
+This mobile application allow you to search films from [The Movie Database ( themoviedb.org )](https://themoviedb.org).
 
 Available features are :
  
