@@ -5,7 +5,7 @@ import {getFilmsFromApiWithSearchedText} from "../api/tmdb-api";
 import {connect} from "react-redux";
 import FilmList from "./film-list";
 
-class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] }, { films: Film[], isLoading: boolean }> {
+class Search extends React.Component<{ navigation: any, favoriteFilms: Film[] }, { films: Film[], isLoading: boolean }> {
 
     private searchedText: string = '';
     private page: number = 1;
@@ -79,7 +79,7 @@ class Search extends React.Component<{ navigation: any, favoritesFilm: Film[] },
                 <Button title={'Search'} onPress={() => this._searchFilms()}>Search</Button>
                 <FilmList films={this.state.films}
                           navigation={this.props.navigation}
-                          favoritesFilm={this.props.favoritesFilm}
+                          favoriteFilms={this.props.favoriteFilms}
                           onEndReached={() => {
                               if (this.page < this.totalPages) {
                                   this._loadFilms()
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state: any) => {
     return {
-        favoritesFilm: state.toggleFavorite.favoritesFilm
+        favoriteFilms: state.toggleFavorite.favoriteFilms
     }
 };
 

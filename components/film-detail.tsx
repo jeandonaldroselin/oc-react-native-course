@@ -10,7 +10,7 @@ import {
     Image,
     TouchableOpacity,
     Share,
-    Platform
+    Platform, Button
 } from 'react-native';
 import {getFilmDetailFromApi, getImageFromApi} from "../api/tmdb-api";
 import Film from "../helpers/film-model";
@@ -19,7 +19,7 @@ import numeral from "numeral";
 import { connect } from 'react-redux';
 import EnlargeShrink from '../animations/enlarge-shrink';
 
-class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[], dispatch: Function }, {film: Film, isLoading: boolean}> {
+class FilmDetail extends React.Component<{ navigation: any, favoriteFilms: Film[], watchedFilms: Film[], dispatch: Function }, {film: Film, isLoading: boolean}> {
 
     static navigationOptions = ({ navigation }) => {
         const { params } = navigation.state;
@@ -70,7 +70,7 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
     }
 
     _displayFavoriteImage() {
-        const isFavourite = (this.props.favoritesFilm.findIndex(item => item.id === this.state.film.id) !== -1);
+        const isFavourite = (this.props.favoriteFilms.findIndex(item => item.id === this.state.film.id) !== -1);
         const sourceImage = isFavourite ? require('../images/ic_favorite.png') : require('../images/ic_favorite_border.png');
         return (
             <EnlargeShrink shouldEnlarge={isFavourite}>
@@ -126,6 +126,23 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
         }
     }
 
+    _toggleWatched() {
+        const action = { type: "TOGGLE_SEEN", value: this.state.film }
+        this.props.dispatch(action);
+    }
+
+    _displayWatchedButton() {
+        if (this.state.film != undefined) {
+            const film = this.state.film;
+            const isWatched = (this.props.watchedFilms.findIndex(item => item.id === film.id) !== -1);
+            return (
+                <TouchableOpacity style={styles.watched_button} activeOpacity={0.1}>
+                    <Button title={isWatched ? 'Mark as unwatched' : 'Mark as watched'} color={'#fff'} onPress={() => this._toggleWatched()} />
+                </TouchableOpacity>
+            );
+        }
+    }
+
     _shareFilm() {
         const { film } = this.state
         Share.share({ title: film.title, message: film.overview })
@@ -151,6 +168,7 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
             <View style={styles.main_container}>
                 {this._displayLoading()}
                 {this._displayFilm()}
+                {this._displayWatchedButton()}
                 {this._displayFloatingActionButton()}
             </View>
         )
@@ -159,8 +177,7 @@ class FilmDetail extends React.Component<{ navigation: any, favoritesFilm: Film[
 
 const styles = StyleSheet.create({
     main_container: {
-        flex: 1,
-        padding: 5
+        flex: 1
     },
     loading_container: {
         position: 'absolute',
@@ -172,7 +189,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     scrollview_container: {
-        flex: 1
+        flex: 1,
+        padding: 5
     },
     image: {
         width: '100%',
@@ -218,12 +236,16 @@ const styles = StyleSheet.create({
     },
     share_touchable_headerrightbutton: {
         marginRight: 8
+    },
+    watched_button: {
+        backgroundColor: '#1c98f3'
     }
 });
 
 const mapStateToProps = (state: any) => {
     return {
-        favoritesFilm: state.toggleFavorite.favoritesFilm
+        favoriteFilms: state.toggleFavorite.favoriteFilms,
+        watchedFilms: state.toggleWatched.watchedFilms
     }
 };
 

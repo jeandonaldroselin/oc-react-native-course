@@ -3,21 +3,16 @@
 import React from 'react'
 import {SafeAreaView, StyleSheet, View} from 'react-native'
 import {connect} from "react-redux";
-import FilmList from "./film-list";
+import FilmListCircle from "./film-list-circle";
 import Film from "../helpers/film-model";
-import Avatar from "./avatar";
 
-class Favorites extends React.Component<{ navigation: any, favoriteFilms: Film[] }> {
+class Watched extends React.Component<{ navigation: any, favoriteFilms: Film[], watchedFilms: Film[] }> {
 
     render() {
         return (
             <SafeAreaView style={styles.main_container}>
-                <View style={styles.avatar_container}>
-                    <Avatar/>
-                </View>
-                <FilmList films={this.props.favoriteFilms}
+                <FilmListCircle films={this.props.watchedFilms}
                           navigation={this.props.navigation}
-                          favoriteFilms={this.props.favoriteFilms}
                           onEndReached={() => {}} />
             </SafeAreaView>
         );
@@ -27,9 +22,6 @@ class Favorites extends React.Component<{ navigation: any, favoriteFilms: Film[]
 const styles = StyleSheet.create({
     main_container: {
         flex: 1,
-    },
-    avatar_container: {
-        alignItems: 'center'
     },
     loading_container: {
         position: 'absolute',
@@ -44,8 +36,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state: any) => {
     return {
-        favoriteFilms: state.toggleFavorite.favoriteFilms
+        watchedFilms: state.toggleWatched.watchedFilms
     }
 };
 
-export default connect(mapStateToProps)(Favorites);
+export default connect(mapStateToProps)(Watched);

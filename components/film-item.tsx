@@ -30,9 +30,9 @@ class FilmItem extends React.Component<{ film: Film, displayDetailForFilm: Funct
                 <TouchableOpacity style={styles.main_container} activeOpacity={0.6} onPress={() => displayDetailForFilm(film.id)}>
                     {
                         film.poster_path ?
-                        <Image source={{uri : getImageFromApi(film.poster_path)}} style={styles.thumbnailImage} />
+                        <Image source={{uri : getImageFromApi(film.poster_path)}} style={styles.thumbnail_image} />
                         :
-                        <View style={styles.thumbnailImage}/>
+                        <View style={styles.thumbnail_image}/>
                     }
                     <View style={styles.content_container}>
                         <View style={styles.title_container}>
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flex: 3,
     },
-    thumbnailImage: {
+    thumbnail_image: {
       backgroundColor: 'gray',
       height: 180,
       width: 120,

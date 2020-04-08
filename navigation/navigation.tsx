@@ -4,6 +4,7 @@ import React from 'react' // N'oubliez pas l'import de React ici. On en a besoin
 import { createStackNavigator } from 'react-navigation-stack';
 import Search from "../components/search";
 import News from "../components/news";
+import Watched from "../components/watched";
 import {createAppContainer} from "react-navigation";
 import FilmDetail from "../components/film-detail";
 import Favorites from "../components/favorites";
@@ -52,6 +53,21 @@ const NewsStackNavigator = createStackNavigator({
     }
 });
 
+const WatchedStackNavigator = createStackNavigator({
+    Watched: {
+        screen: Watched,
+        navigationOptions: {
+            title: 'Watched Films'
+        },
+    },
+    FilmDetail: {
+        screen: FilmDetail,
+        navigationOptions: {
+            title: 'Detail'
+        }
+    }
+});
+
 const MoviesTabNavigator = createBottomTabNavigator({
         Search: {
             screen: SearchStackNavigator,
@@ -74,6 +90,14 @@ const MoviesTabNavigator = createBottomTabNavigator({
             navigationOptions: {
                 tabBarIcon: () => {
                     return <Image source={require('../images/ic_fiber_new.png')} style={styles.icon}/>
+                }
+            }
+        },
+        Watched: {
+            screen: WatchedStackNavigator,
+            navigationOptions: {
+                tabBarIcon: () => {
+                    return <Image source={require('../images/ic_check.png')} style={styles.icon}/>
                 }
             }
         }

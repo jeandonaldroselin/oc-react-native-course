@@ -1,17 +1,13 @@
 import React from 'react';
 import {FlatList, StyleSheet, View} from "react-native";
 import Film from "../helpers/film-model";
-import FilmItem from "./film-item";
+import FilmItemCircle from "./film-item-circle";
 
-class FilmList extends React.Component<{ navigation: any, films: Film[], favoriteFilms: Film[], onEndReached: Function }> {
+class FilmListCircle extends React.Component<{ navigation: any, films: Film[], onEndReached: Function }> {
 
     _displayDetailForFilm = (filmId: number) => {
         this.props.navigation && this.props.navigation.navigate('FilmDetail', { filmId: filmId });
     };
-
-    _isFilmFavorite(film: Film) {
-        return this.props.favoriteFilms.findIndex(item => item.id === film.id) !== -1;
-    }
 
     render() {
         return (
@@ -19,9 +15,8 @@ class FilmList extends React.Component<{ navigation: any, films: Film[], favorit
                 <FlatList
                 showsVerticalScrollIndicator={true}
                 data={this.props.films}
-                extraData={this.props.favoriteFilms}
                 keyExtractor={(item) => item.id.toString()}
-                renderItem={({item}) => <FilmItem film={item} displayDetailForFilm={this._displayDetailForFilm} isFilmFavorite={this._isFilmFavorite(item)}/>}
+                renderItem={({item}) => <FilmItemCircle film={item} displayDetailForFilm={this._displayDetailForFilm}/>}
                 onEndReachedThreshold={0.5}
                 onEndReached={() => {
                     this.props.onEndReached()
@@ -37,4 +32,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default FilmList;
+export default FilmListCircle;
