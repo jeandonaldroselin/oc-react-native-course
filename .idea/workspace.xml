@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79f0f9e-6b70-4d56-b50f-c4459c9b4262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/film-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/film-list-circle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/watched.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/reducers/watched-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/favorites.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/film-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/film-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/film-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/film-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/filter-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/film-item-circle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/news.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/news.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/MoviesAndMe.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/MoviesAndMe.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/MoviesAndMe/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/MoviesAndMe/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/configure-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/configure-store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/reducers/favorite-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/reducers/favorite-reducer.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,7 +30,7 @@
           <entry key="js" value="7" />
           <entry key="json" value="18" />
           <entry key="keystore" value="1" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="plist" value="1" />
           <entry key="png" value="6" />
           <entry key="ts" value="41" />
@@ -58,7 +43,7 @@
           <entry key="Image" value="6" />
           <entry key="JSON" value="16" />
           <entry key="JavaScript" value="7" />
-          <entry key="Markdown" value="3" />
+          <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="TypeScript" value="41" />
           <entry key="TypeScript JSX" value="40" />
@@ -77,6 +62,7 @@
           <entry key="js" value="18" />
           <entry key="json" value="20" />
           <entry key="md" value="1702" />
+          <entry key="pbxproj" value="18" />
           <entry key="ts" value="1309" />
           <entry key="tsx" value="8857" />
         </counts>
@@ -86,7 +72,7 @@
           <entry key="JSON" value="20" />
           <entry key="JavaScript" value="18" />
           <entry key="Markdown" value="1702" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="TypeScript" value="1309" />
           <entry key="TypeScript JSX" value="8857" />
         </counts>
@@ -119,14 +105,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/film-detail.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="139" column="65" selection-start-line="139" selection-start-column="65" selection-end-line="139" selection-end-column="65" />
+            <state relative-caret-position="296">
+              <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
               <folding>
                 <element signature="e#31#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="249">
+                <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -135,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/components/film-list.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -147,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/components/film-list-circle.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -159,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/components/film-item-circle.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="e#28#53#0" expanded="true" />
               </folding>
@@ -191,15 +189,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/react-native/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="913">
-              <caret line="872" column="20" selection-start-line="872" selection-start-column="14" selection-end-line="872" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -211,7 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console.log(</find>
       <find>toggleFavorite</find>
       <find>state</find>
       <find>@react-native-community/async-storage</find>
@@ -234,20 +222,20 @@
       <find>thumbnail_image</find>
       <find>onLong</find>
       <find>seen</find>
-      <find>seenFilms</find>
       <find>favoritesFilm</find>
       <find>FilmListCircle</find>
       <find>title_text</find>
       <find>Seen</find>
       <find>favoriteFilm</find>
       <find>Non vu</find>
+      <find>seenFilms</find>
+      <find>org.</find>
     </findStrings>
     <replaceStrings>
       <replace>isLoading</replace>
       <replace>film</replace>
       <replace>shouldZoom</replace>
       <replace>$(PRODUCT_NAME)</replace>
-      <replace>seenFilm</replace>
       <replace>thumbnail_image</replace>
       <replace>watched</replace>
       <replace>Watched</replace>
@@ -255,6 +243,7 @@
       <replace>favoriteFilms</replace>
       <replace>right_container</replace>
       <replace>seenFilms</replace>
+      <replace>seenFilm</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/components</dir>
@@ -313,9 +302,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -415,23 +401,23 @@
       <updated>1585960432760</updated>
       <workItem from="1585960435906" duration="65411000" />
       <workItem from="1586264081305" duration="24367000" />
-      <workItem from="1586353884439" duration="7542000" />
+      <workItem from="1586353884439" duration="7879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97320000" />
+    <option name="totallyTimeSpent" value="97657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="925" height="833" extended-state="0" />
+    <frame x="11" y="23" width="925" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3141593" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3141593" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.1565452" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.46891892" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -556,16 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="6">
-            <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -763,7 +739,7 @@
     <entry file="file://$PROJECT_DIR$/components/film-list.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -773,7 +749,7 @@
     <entry file="file://$PROJECT_DIR$/components/film-list-circle.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -783,7 +759,7 @@
     <entry file="file://$PROJECT_DIR$/components/film-item-circle.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="e#28#53#0" expanded="true" />
           </folding>
@@ -822,11 +798,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/film-detail.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="139" column="65" selection-start-line="139" selection-start-column="65" selection-end-line="139" selection-end-column="65" />
+        <state relative-caret-position="296">
+          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
           <folding>
             <element signature="e#31#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="249">
+            <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

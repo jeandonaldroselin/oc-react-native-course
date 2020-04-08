@@ -287,7 +287,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parcours.myParcours;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siapep.moviesAndMe;
 				PRODUCT_NAME = MoviesAndMe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -310,7 +310,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parcours.myParcours;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siapep.moviesAndMe;
 				PRODUCT_NAME = MoviesAndMe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
